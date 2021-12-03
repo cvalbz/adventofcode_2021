@@ -29,6 +29,10 @@ def quantify(iterable, pred=bool):
     "Count how many times the predicate is true."
     return sum(map(pred, iterable))
 
+def transpose(matrix): return tuple(zip(*matrix))
+
+####
+
 def puzzle_a(day, solve_challenge_a):
     data = read_input_data(day)
     print(solve_challenge_a(data))
