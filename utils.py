@@ -31,6 +31,9 @@ def quantify(iterable, pred=bool):
 
 def transpose(matrix): return tuple(zip(*matrix))
 
+def int_range_incl(a, b):
+    return range(a, b + 1) if a < b else range(a, b - 1, -1)
+
 ####
 
 def puzzle_a(day, solve_challenge_a):
